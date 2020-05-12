@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language">
+        <item>Korean</item>
+        <item>English</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>KRW</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>CNY</item>
+    </string-array>
+</resources>
+

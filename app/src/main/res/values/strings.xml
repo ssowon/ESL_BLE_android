@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ESL_BLE_android</string>
+    <string name="name">name</string>
+    <string name="number">number</string>
+    <string name="Sale">Sale</string>
+    <string name="no_connection">No internet connection! Cannot be translated!</string>
+    <string name="register">회원가입</string>
+</resources>
