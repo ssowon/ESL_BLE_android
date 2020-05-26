@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     DBHelper dbHelper;
     private EditText et_id, et_pw;
-    private Button button_login_member, button_login_admin, button_unlogin, button_register;
+    private Button button_login_member, button_login_admin, button_unlogin, button_register, bt_test;
 
     final static String dbName = "unlogin.db";
     final static int dbVersion = 2;
@@ -158,5 +159,6 @@ public class MainActivity extends AppCompatActivity {
             db.execSQL("DROP TABLE IF EXISTS t3");
             onCreate(db);
         }
+
     }
 }

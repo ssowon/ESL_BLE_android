@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class AdminItemUpdateRequest extends StringRequest {
 
-    final static private String URL = "http://ec2-13-124-52-74.ap-northeast-2.compute.amazonaws.com/Item_update_app.php";
+    final static private String URL = "http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/Item_update_app.php";
     private Map<String, String> map;
 
     public AdminItemUpdateRequest(String name, String price, String pos, String number, String sale, Response.Listener<String> listener) {

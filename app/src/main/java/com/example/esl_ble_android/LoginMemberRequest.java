@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class LoginMemberRequest extends StringRequest {
 
-    final static private String URL = "http://ec2-13-124-52-74.ap-northeast-2.compute.amazonaws.com/Login_app_mem.php";
+    final static private String URL = "http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" +"/Login_app_mem.php";
     private Map<String, String> map;
 
     public LoginMemberRequest(String userID, String userPassword, Response.Listener<String> listener) {
@@ -18,6 +18,7 @@ public class LoginMemberRequest extends StringRequest {
         map = new HashMap<>();
         map.put("userID",userID);
         map.put("userPassword",userPassword);
+
     }
 
     @Override

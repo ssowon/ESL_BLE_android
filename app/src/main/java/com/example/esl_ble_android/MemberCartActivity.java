@@ -64,7 +64,7 @@ public class MemberCartActivity extends AppCompatActivity {
         tv_cart.setText(userName + "님의 장바구니");
 
         personList = new ArrayList<>();
-        getData("http://ec2-13-124-52-74.ap-northeast-2.compute.amazonaws.com/db_connect.php");
+        getData("http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/db_connect.php");
     }
 
     protected void showList(){
@@ -110,7 +110,7 @@ public class MemberCartActivity extends AppCompatActivity {
             ListViewAdapter cusAdapter = new ListViewAdapter(data);
 
             list.setAdapter(cusAdapter);
-            tv_sum.setText("총 가격 : "+Integer.toString(sumint) + "원");
+            tv_sum.setText("총 가격 : "+sumint + "원");
         }catch (JSONException e){
             e.printStackTrace();
         }

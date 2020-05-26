@@ -46,7 +46,7 @@ public class AdminHomeActivity extends AppCompatActivity {
 
         list = findViewById(R.id.listView);
 
-        getData("http://ec2-13-124-52-74.ap-northeast-2.compute.amazonaws.com/db_connect.php");
+        getData("http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/db_connect.php");
     }
 
     protected void showList(){
