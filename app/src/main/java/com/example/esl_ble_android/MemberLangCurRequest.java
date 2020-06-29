@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class MemberLangCurRequest extends StringRequest {
 
-    final static private String URL = "http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/member_langcur_app.php";
+    final static private String URL = "http://ec2-13-125-127-155.ap-northeast-2.compute.amazonaws.com" + "/member_langcur_app.php";
     private Map<String, String> map;
 
     public MemberLangCurRequest(String userID, String userName, String userLanguage, String userCurrency, Response.Listener<String> listener) {

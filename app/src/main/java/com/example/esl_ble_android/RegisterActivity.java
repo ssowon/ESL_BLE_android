@@ -33,6 +33,15 @@ public class RegisterActivity extends AppCompatActivity {
         et_age = findViewById(R.id.et_age);
 
         btn_register = findViewById(R.id.button_register);
+//        btn_register.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+//                Toast.makeText(getApplicationContext(), "회원 등록에 성공하였습니다.",Toast.LENGTH_SHORT).show();
+//                startActivity(intent);
+//
+//            }
+//        });
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

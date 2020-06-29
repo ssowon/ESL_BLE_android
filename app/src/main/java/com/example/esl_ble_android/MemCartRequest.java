@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class MemCartRequest extends StringRequest {
 
-    final static private String URL = "http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/mem_cart_app.php";
+    final static private String URL = "http://ec2-13-125-127-155.ap-northeast-2.compute.amazonaws.com" + "/mem_cart_app.php";
     private Map<String, String> map;
 
     public MemCartRequest(String userID, Response.Listener<String> listener) {

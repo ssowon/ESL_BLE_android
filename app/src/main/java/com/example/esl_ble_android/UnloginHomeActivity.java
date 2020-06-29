@@ -78,7 +78,7 @@ public class UnloginHomeActivity extends AppCompatActivity {
 
             ImageView imageView = v.findViewById(R.id.imageView);
             Picasso.get()
-                    .load("http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/image/" + items.get(position) + ".png")
+                    .load("http://ec2-13-125-127-155.ap-northeast-2.compute.amazonaws.com" + "/image/" + items.get(position) + ".png")
                     .into(imageView);
             imageView.setOnClickListener(new View.OnClickListener() {
                 @Override

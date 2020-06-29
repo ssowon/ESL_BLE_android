@@ -71,7 +71,7 @@ public class ListViewAdapter extends BaseAdapter {
         saleTextView.setText(listViewItem.getSale());
 
         Picasso.get()
-                .load("http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/image/" + listViewItem.getNumber() + ".png")
+                .load("http://ec2-13-125-127-155.ap-northeast-2.compute.amazonaws.com" + "/image/" + listViewItem.getNumber() + ".png")
                 .into(itemImageView);
 
         return convertView;

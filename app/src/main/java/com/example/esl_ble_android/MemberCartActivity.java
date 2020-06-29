@@ -64,7 +64,7 @@ public class MemberCartActivity extends AppCompatActivity {
         tv_cart.setText(userName + "님의 장바구니");
 
         personList = new ArrayList<>();
-        getData("http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/db_connect.php");
+        getData("http://ec2-13-125-127-155.ap-northeast-2.compute.amazonaws.com" + "/db_connect.php");
     }
 
     protected void showList(){
