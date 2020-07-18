@@ -38,7 +38,7 @@ import javax.net.ssl.HttpsURLConnection;
 public class MemberIItemActivity extends AppCompatActivity {
 
     private ImageView img;
-    private TextView tv_name, tv_price, tv_pos, tv_number, tv_sale;
+    private TextView tv_name, tv_price, tv_pos, tv_number, tv_sale, tv_cur;
     private String result;
 
     @Override
@@ -62,6 +62,7 @@ public class MemberIItemActivity extends AppCompatActivity {
         tv_pos = findViewById(R.id.tv_pos);
         tv_number = findViewById(R.id.tv_num);
         tv_sale = findViewById(R.id.tv_sale);
+        tv_cur = findViewById(R.id.tv_cur);
         img = findViewById(R.id.itemimage);
 
         tv_name.setText(name);
@@ -69,9 +70,12 @@ public class MemberIItemActivity extends AppCompatActivity {
         tv_pos.setText(pos);
         tv_number.setText(number);
         tv_sale.setText(sale);
+        if(userCurrency.equals("USD")) tv_cur.setText("$");
+        else if(userCurrency.equals("EUR")) tv_cur.setText("€");
+        else if(userCurrency.equals("JPY") || userCurrency.equals("CNY")) tv_cur.setText("¥");
 
         Picasso.get()
-                .load("http://ec2-13-124-77-109.ap-northeast-2.compute.amazonaws.com" + "/image/" + number + ".png")
+                .load("http://ec2-13-125-127-155.ap-northeast-2.compute.amazonaws.com" + "/image/" + number + ".png")
                 .into(img);
         getWebsite();
         if(!userLanguage.equals("Korean")){
