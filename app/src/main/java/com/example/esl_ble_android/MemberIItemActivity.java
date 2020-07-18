@@ -128,8 +128,8 @@ public class MemberIItemActivity extends AppCompatActivity {
 
         @Override
         protected Integer doInBackground(Integer... integers) {
-            String clientID = "coy9j9qXIz4r5dVpFPCV";
-            String clientSecret = "KnNtMU5A1h";
+            String clientID = ;//아이디 생략
+            String clientSecret = ;
 
             String apiURL = "https://openapi.naver.com/v1/papago/n2mt";
             String text;
